@@ -541,4 +541,10 @@ div.desc {
     width: 85%;
   }
 
+  /* Align the pictures  in the gallery */
+  .pictureAlignmentGallery
+  {
+    margin-right: 3.5%;
+  }
+
 }
