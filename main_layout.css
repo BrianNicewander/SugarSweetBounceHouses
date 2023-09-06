@@ -500,6 +500,13 @@ div.desc {
     color: white;
   }
 
+  /* Picture above the menu bar make it smaller */
+  .logoPic 
+  {
+    width: 350px;
+    height: 250px;
+  }
+
   /********************************************************************
     Home page
   ********************************************************************/
@@ -547,4 +554,19 @@ div.desc {
     margin-right: 3.5%;
   }
 
+  /********************************************************************
+   Slideshow page or single page
+  ********************************************************************/
+
+  .SinglePageText 
+{
+  padding-right: 20px;
+}
+
+/* Picture size on the slideshow */
+.slideshowImg
+{
+  width: 93%; 
+  height:650px;
+}
 }
