@@ -248,16 +248,6 @@ font-size: 35px;
    Contact Us page
 ********************************************************************/
 
-/* div.container and ul.myUL centers the li list */
-div.container {
-  text-align: center;
-}
-
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-
 /* Makes space between end of box field and screen */
 .contactUs 
 {
@@ -276,11 +266,22 @@ ul.myUL {
    Event policies page
 ********************************************************************/
 
+/* div.container and ul.myUL centers the li list */
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
  /* For the text */
  .eventPoliciesText
  {
+    color:black;
    text-align: center;
-   color:black
+   padding-right: 13px;
  }
  
 /********************************************************************
@@ -465,7 +466,6 @@ div.desc {
   }
 
   .subtitle {
-    font-family: "Lato";
     font-size: large;
     color: white;
   }
@@ -495,7 +495,6 @@ div.desc {
   }
 
   .subtitle {
-    font-family: "Lato";
     font-size: large;
     color: white;
   }
@@ -506,18 +505,7 @@ div.desc {
     width: 350px;
     height: 250px;
   }
-
-  /********************************************************************
-    Home page
-  ********************************************************************/
-  /* Picture in white box under menu */
-  /* Puts the picture over the text when the screen gets smaller */
-  .homeWhiteBoxImage
-  {
-    margin-right: 245px;
-  }
 }
-
 
 
 /********************************************************************
@@ -559,14 +547,14 @@ div.desc {
   ********************************************************************/
 
   .SinglePageText 
-{
-  padding-right: 20px;
-}
+  {
+    padding-right: 20px;
+  }
 
-/* Picture size on the slideshow */
-.slideshowImg
-{
-  width: 93%; 
-  height:650px;
-}
+  /* Picture size on the slideshow */
+  .slideshowImg
+  {
+    width: 93%; 
+    height:650px;
+  }
 }
