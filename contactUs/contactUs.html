@@ -68,143 +68,107 @@
     <br>
 
     <div class="contactUs">
-      <form onsubmit="sendEmail(); reset(); return false;">
-        <h2>
-          Get in touch at Phone: (620)000-0000, Email: test@yahoo.com or fill
-          out form below
-        </h2>
-        <br />
+      <form action="https://formsubmit.co/briannicewander@hotmail.com" method="POST">
+        <h2 class="contactUsText"> Get in touch at Phone: (620)000-0000, Email: test@yahoo.com or fill out form below </h2>
+        <br>
+        <div class="form-group">
+          <input
+            required
+            type="text"
+            id="firstName"
+            value=""
+            pattern="[A-Za-z]{1,50}"
+            class="form-control"
+            placeholder="First Name"
+          />
+        </div>
+        
+        <br>
 
-        <table id="contactForm" cellpadding="0" cellspacing="8">
-          <tr>
-            <div class="form-group">
-              <input
-                required
-                type="text"
-                id="first_name"
-                value=""
-                pattern="[A-Za-z]{1,50}"
-                class="form-control"
-                placeholder="First Name"
-              />
-            </div>
-          </tr>
+        <div class="form-group">
+          <input
+            required
+            type="text"
+            id="lastLame"
+            value=""
+            pattern="[A-Za-z]{1,50}"
+            class="form-control"
+            placeholder="Last Name"
+          />
+        </div>
 
-          <tr>
-            <div class="form-group">
-              <input
-                required
-                type="text"
-                id="Last_name"
-                value=""
-                pattern="[A-Za-z]{1,50}"
-                class="form-control"
-                placeholder="Last Name"
-              />
-            </div>
-          </tr>
+        <br>
 
-          <tr>
-            <div class="form-group">
-              <input
-                required
-                type="text"
-                id="Phone"
-                value=""
-                pattern="[0-9-()]{1,20}"
-                class="form-control"
-                placeholder="Phone number"
-              />
-            </div>
-          </tr>
+       <div class="form-group">
+          <input
+            required
+            type="text"
+            id="phone"
+            value=""
+            pattern="[0-9-()]{1,20}"
+            class="form-control"
+            placeholder="Phone number"
+          />
+        </div>
+          
+        <br>
 
-          <tr>
-            <div class="form-group">
-              <input
-                required
-                type="email"
-                id="email"
-                value=""
-                class="form-control"
-                placeholder="Email-address"
-              />
-            </div>
-          </tr>
+        <div class="form-group">
+          <input
+            required
+            type="email"
+            id="email"
+            value=""
+            class="form-control"
+            placeholder="Email-address"
+          />
+        </div>
+         
+        <br>
 
-          <tr>
-            <div class="form-group">
-              <input
-                required
-                onchange="validateEmail();"
-                type="email"
-                id="email_retype"
-                value=""
-                class="form-control"
-                placeholder="Re-type Email-address"
-              />
-              <p id="emailError" class="errorMsg"></p>
-            </div>
-          </tr>
+        <div class="form-group">
+          <input
+            required
+            onchange="validateEmail();"
+            type="email"
+            id="emailRetype"
+            value=""
+            class="form-control"
+            placeholder="Re-type Email-address"
+          />
+          <p id="emailError" class="errorMsg"></p>
+        </div>
+          
+        <br>
+         
+        <div class="form-group">
+          <label>How Do You Prefer To Be Contacted?</label>
+          <select
+            class="form-control"
+            id="contactPreference"
+          >
+            <option value="Email">Email</option>
+            <option value="homePhone">Phone</option>
+            <option value="No Contact">FYI only, no contact is needed</option>
+          </select>
+        </div>
 
-          <tr>
-            <div class="form-group">
-              <label>How Do You Prefer To Be Contacted?</label>
-              <select
-                class="form-control"
-                name="contact_preference"
-                id="contact_preference"
-              >
-                <option value="Email">Email</option>
-                <option value="Home Phone">Phone</option>
-                <option value="No Contact">
-                  FYI only, no contact is needed
-                </option>
-              </select>
-            </div>
-          </tr>
-          <br />
+        <br>
+  
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Send Us A Message:</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
 
-          <tr>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1"
-                >Send Us A Message:</label
-              >
-              <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-          </tr>
-          <br />
-        </table>
+        <br>
+
         <button type="submit">Send</button>
       </form>
     </div>
 
-    <br />
+    <br>
 
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "",
-          Password: "",
-          To: "",
-          From: document.getElementById("email").value,
-          Subject: "New Contact Form Enquiry",
-          Body:
-            "First_name: " +
-            document.getElementById("first_name").value +
-            "Last_name: " +
-            document.getElementById("Last_name").value +
-            "<br> Phone: " +
-            document.getElementById("Phone").value +
-            "<br> Email: " +
-            document.getElementById("Email").value +
-            "<br> contact_preference: " +
-            document.getElementById("contact_preference").value +
-            "<br> Message: " +
-            document.getElementById("message").value,
-        }).then((message) => alert("Message Sent Successfully"));
-      }
-    </script>
+
     <br>
     <br>
 
@@ -222,6 +186,5 @@
     <br>
 
     <script src="../javascript/validateEmail.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
