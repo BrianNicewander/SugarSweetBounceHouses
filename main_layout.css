@@ -215,7 +215,7 @@ img
 
 /* Makes the white box in the services page */
 .servicePageBox {
-  background-color: white;
+  background-color: rgb(255, 102, 102, 0.5);
   position: relative;
   margin: 0% auto;
   padding: 2%;
@@ -223,7 +223,6 @@ img
   width: 93%;
   height: auto;
   color: black;
-  background-color: rgb(255, 102, 102, 0.5);
 }
 
  /* Adds padding to the bottom to the first box so everything fits in it */
@@ -258,10 +257,10 @@ img
  /* For the heading in the white box*/
 .serviceText
 {
-padding-top: 50px;
-text-align: center;
-font-weight: bolder;
-font-size: 35px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
 }
 
 /* For button on service page */
@@ -269,12 +268,6 @@ font-size: 35px;
 {
   margin-left: 24%;
 }
-
-/********************************************************************
-   Book Online page
-********************************************************************/
-
-
 
 /********************************************************************
    Contact Us page
@@ -297,7 +290,36 @@ font-size: 35px;
    About page
 ********************************************************************/
 
+/* Box on the about page */
+.aboutBox 
+{
+  background-color: rgb(255, 102, 102, 0.5);
+  position: relative;
+  margin: 10% auto;
+  padding:2% 2% 11% 2%;
+  float: none;
+  width: 95%;
+  height: auto;
+  color: black;
+}
 
+/* Img in the box on the about page */
+.aboutImgBox 
+{
+  width:93%;
+  height:500px;
+  border: 5px solid black;
+}
+
+/* Text in the box on the about page */
+.aboutText
+{
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  padding-top:11%;
+}
 
 
 /********************************************************************
@@ -521,7 +543,6 @@ div.desc {
 }
 
 
-
 /********************************************************************
    Media queries for tablets devices
 ********************************************************************/
@@ -544,6 +565,9 @@ div.desc {
     height: 250px;
   }
 
+  /********************************************************************
+    Home page
+  ********************************************************************/
   /* Picture in white box under menu */
   .homeWhiteBoxImage
   {
@@ -597,6 +621,17 @@ div.desc {
   }
 
   /********************************************************************
+    About page
+  ********************************************************************/
+  /* Img in the box on the about page */
+  .aboutImgBox 
+  {
+    width: 400px;
+    height: auto;
+    margin-left: 75px;
+  }
+
+  /********************************************************************
    Slideshow page or single page
   ********************************************************************/
 
@@ -610,5 +645,33 @@ div.desc {
   {
     width: 93%; 
     height:650px;
+  }
+}
+
+
+/********************************************************************
+   Media queries for mobile devices
+********************************************************************/
+
+@media screen and (max-width: 570px) 
+{
+  .photo_space {
+    height: 0px;
+  }
+
+  .subtitle {
+    font-family: "Lato";
+    font-size: large;
+    color: white;
+  }
+
+  /********************************************************************
+    About page
+  ********************************************************************/
+  /* Img in the box on the about page */
+  .aboutImgBox 
+  {
+    width: 410px;
+    margin-left: .5%;
   }
 }
