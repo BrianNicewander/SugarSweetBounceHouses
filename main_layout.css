@@ -80,12 +80,27 @@ button:hover
 }
 /* End of footer */
 
-.counter{
+
+
+
+
+/* Counter on the email sent page after you send a message */
+.counter
+{
   border: none;
   background-color: #e6f0ff;
   font-weight: bold;
   font-size: 15px;
   width: 25px;
+  margin-right: 6px;
+ }
+
+ .emailSentPage
+ {
+  text-align: center;
+  margin: 5% 5% 0% 5%;
+  color: black;
+
  }
 
 /********************************************************************
