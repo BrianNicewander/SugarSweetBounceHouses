@@ -543,6 +543,13 @@ div.desc {
     width: 350px;
     height: 250px;
   }
+
+  /* Picture in white box under menu */
+  .homeWhiteBoxImage
+  {
+    width: 95%;
+    height: auto;
+  }
 }
 
 
@@ -561,6 +568,15 @@ div.desc {
     font-size: large;
     color: white;
   }
+  
+  /********************************************************************
+    Home page
+  ********************************************************************/
+    /* Picture in white box under menu */
+    .homeWhiteBoxImage
+    {
+      margin-left: 3%;
+    }
 
   /********************************************************************
     Gallery page
