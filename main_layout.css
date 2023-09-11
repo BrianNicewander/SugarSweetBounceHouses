@@ -64,7 +64,7 @@ button:hover
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4.5%;
+  height: 6%;
   background-color: black;
   text-align: center;
   font-weight: bolder;
@@ -75,7 +75,7 @@ button:hover
   width: 50px; 
   height:40px;
   border-radius: 30%;
-  margin: 1% 1.5%;
+  margin: 20px 15px;
 }
 /* End of footer */
 
@@ -809,7 +809,8 @@ ul.myUL {
     margin-left: 4%;
     width: 8%;
   }
-}
+
+} /* End of  Media queries for mobile devices  */
 
 
 /********************************************************************
@@ -857,4 +858,35 @@ ul.myUL {
     margin-top: -25%;
   }
 
-} /* End of  Media queries for mobile devices  */
+} /* End of  Media queries for smaller mobile devices  */
+
+
+/********************************************************************
+   Media queries for even smaller mobile devices
+********************************************************************/
+
+@media screen and (max-width: 400px) 
+{
+  .photo_space 
+  {
+    height: 0px;
+  }
+
+  .subtitle 
+  {
+    font-family: "Lato";
+    font-size: large;
+    color: white;
+  }
+
+  /********************************************************************
+    About page
+  ********************************************************************/
+  /* Img in the box on the about page */
+  .aboutImgBox 
+  {
+    width: 99%;
+    margin-left: 3%;
+  }
+
+} /* End of  Media queries for even smaller mobile devices  */
