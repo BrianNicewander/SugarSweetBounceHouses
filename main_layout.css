@@ -865,7 +865,7 @@ ul.myUL {
    Media queries for even smaller mobile devices
 ********************************************************************/
 
-@media screen and (max-width: 300px) 
+@media screen and (max-width: 500px) 
 {
   .photo_space 
   {
@@ -886,7 +886,7 @@ ul.myUL {
   .aboutImgBox 
   {
     width: 99%;
-    margin-left: 3%;
+    margin-left: 6%;
   }
 
 } /* End of  Media queries for even smaller mobile devices  */
