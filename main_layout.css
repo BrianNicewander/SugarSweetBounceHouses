@@ -865,7 +865,7 @@ ul.myUL {
    Media queries for even smaller mobile devices
 ********************************************************************/
 
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 300px) 
 {
   .photo_space 
   {
@@ -879,10 +879,6 @@ ul.myUL {
     color: white;
   }
 
-  body{
-    background-color: black;
-  }
-
   /********************************************************************
     About page
   ********************************************************************/
@@ -894,3 +890,4 @@ ul.myUL {
   }
 
 } /* End of  Media queries for even smaller mobile devices  */
+
