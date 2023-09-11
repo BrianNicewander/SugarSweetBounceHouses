@@ -77,23 +77,16 @@
 
     <!-- Start of contact us form -->
     <div class="contactUs">
-      <form action="https://formsubmit.co/briannicewander@hotmail.com" method="POST">
-        <!-- <input type="hidden" name="_next" value="https://briannicewander.github.io/SugarSweetBounceHouses/emailSent.html"> -->
+      <form action="https://formsubmit.co/34cf6fbb23da520a6d728d782f8e83f0" method="POST">
+        <input type="hidden" name="next" value="https://briannicewander.github.io/SugarSweetBounceHouses/emailSent.html">
         <h2 class="contactUsText">Get in touch at Phone: (620)000-0000, Email: test@yahoo.com or fill out form below</h2>
         <br>
 
         <table id="contactForm" cellpadding="0" cellspacing="8">
           <tr>
             <div class="form-group">
-              <input
-                required
-                type="text"
-                id="first_name"
-                name="First&nbsp;Name"
-                value=""
-                pattern="[A-Za-z]{1,50}"
-                class="form-control"
-                placeholder="First Name"
+              <input required type="text" id="first_name" name="First&nbsp;Name" value=""
+                pattern="[A-Za-z]{1,50}" class="form-control" placeholder="First Name"
               />
             </div>
           </tr>
@@ -101,15 +94,8 @@
 
           <tr>
             <div class="form-group">
-              <input
-                required
-                type="text"
-                id="Last_name"
-                name="Last&nbsp;Name"
-                value=""
-                pattern="[A-Za-z]{1,50}"
-                class="form-control"
-                placeholder="Last Name"
+              <input required type="text" id="Last_name" name="Last&nbsp;Name" value=""
+                pattern="[A-Za-z]{1,50}" class="form-control" placeholder="Last Name"
               />
             </div>
           </tr>
@@ -117,15 +103,8 @@
 
           <tr>
             <div class="form-group">
-              <input
-                required
-                type="text"
-                id="Phone"
-                name="Phone&nbsp;Number"
-                value=""
-                pattern="[0-9-()]{1,20}"
-                class="form-control"
-                placeholder="Phone number"
+              <input required type="text" id="Phone" name="Phone&nbsp;Number" value=""
+                pattern="[0-9-()]{1,20}" class="form-control" placeholder="Phone number"
               />
             </div>
           </tr>
@@ -133,14 +112,8 @@
 
           <tr>
             <div class="form-group">
-              <input
-                required
-                type="email"
-                id="email"
-                name="Email&nbsp;Address"
-                value=""
-                class="form-control"
-                placeholder="Email-address"
+              <input required type="email" id="email" name="Email&nbsp;Address" value=""
+                class="form-control" placeholder="Email-address"
               />
             </div>
           </tr>
@@ -148,14 +121,8 @@
 
           <tr>
             <div class="form-group">
-              <input
-                required
-                onchange="validateEmail();"
-                type="email"
-                id="email_retype"
-                value=""
-                class="form-control"
-                placeholder="Re-type Email-address"
+              <input required onchange="validateEmail();" type="email" id="email_retype" value=""
+                class="form-control" placeholder="Re-type Email-address"
               />
               <p id="emailError" class="errorMsg"></p>
             </div>
@@ -165,16 +132,10 @@
           <tr>
             <div class="form-group">
               <label>How Do You Prefer To Be Contacted?</label>
-              <select
-                class="form-control"
-                name="How&nbsp;to&nbsp;connect"
-                id="contact_preference"
-              >
+              <select class="form-control" name="How&nbsp;to&nbsp;connect" id="contact_preference">
                 <option value="Email">Email</option>
                 <option value="Home Phone">Phone</option>
-                <option value="FYI only, no contact is needed">
-                  FYI only, no contact is needed
-                </option>
+                <option value="FYI only, no contact is needed">FYI only, no contact is needed</option>
               </select>
             </div>
           </tr>
@@ -201,11 +162,12 @@
       <a  href="https://www.instagram.com/sugarsweetparties" target="_blank"> <img src="./img/instagramIcon.jpeg"   alt="Instagram Icon"/></a>
     </div>
     <!-- End  of footer -->
-
-    <script src="./JavaScript/validateEmail.js"></script>
  
     <br>
     <br>
     <br>
+
+    <script src="./JavaScript/validateEmail.js"></script>
+    
   </body>
 </html>

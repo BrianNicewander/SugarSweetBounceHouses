@@ -45,7 +45,6 @@ button
   color: white;
   padding: 10px;
   text-align: center;
-  margin-left: 15px;
   cursor: pointer;
   border-radius: 30px;
 }
@@ -61,12 +60,11 @@ button:hover
 /* Start of footer */
 .footer 
 {
-  padding-top: 5px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 4.5%;
   background-color: black;
   text-align: center;
   font-weight: bolder;
@@ -77,7 +75,7 @@ button:hover
   width: 50px; 
   height:40px;
   border-radius: 30%;
-  margin: 1.5%;
+  margin: 1% 1.5%;
 }
 /* End of footer */
 
@@ -140,11 +138,11 @@ h1
   font-weight: bolder;
 }
 
- /* For the text under the pictures */
- .displayText
- {
-   text-align: center;
- }
+/* For the text under the pictures */
+.displayText
+{
+  text-align: center;
+}
 
 /* Images on the home page and book online */
 .displayImg
@@ -199,7 +197,8 @@ h1
 ********************************************************************/
 
 /* Makes the white box in the services page */
-.servicePageBox {
+.servicePageBox 
+{
   background-color: rgb(255, 102, 102, 0.5);
   position: relative;
   margin: 0% auto;
@@ -216,11 +215,11 @@ h1
   padding-bottom: 170px;
 }
 
- /* Adds padding to the bottom to the second box so everything fits in it */
- .servicePageSecondBox
- {
-   padding-bottom: 35px;
- }
+/* Adds padding to the bottom to the second box so everything fits in it */
+.servicePageSecondBox
+{
+  padding-bottom: 35px;
+}
 
 /* Picture in first white box */
 .serviceImageFirstBox
@@ -306,7 +305,6 @@ h1
   padding-top:11%;
 }
 
-
 /********************************************************************
    Event policies page
 ********************************************************************/
@@ -314,13 +312,14 @@ h1
  /* For the text */
  .eventPoliciesText
  {
-    color:black;
+  color:black;
    text-align: center;
    padding: 0 2%;
  }
 
 /* div.container and ul.myUL centers the li list */
-div.container {
+div.container 
+{
   text-align: center;
 }
 
@@ -372,21 +371,24 @@ ul.myUL {
 }
 
 /* Border around the picture and text */
-.gallery {
+.gallery 
+{
   background-color: white;
   width: 425px;
   margin: 5% 0% 0% 4%;
 }
 
 /* Image in the border */
-.galleryImg {
+.galleryImg 
+{
   width: 92%;
   height: auto;
   margin: 4% 0% 2% 3.5%;
 }
 
 /* Text in the border under the picture */
-.galleryText {
+.galleryText 
+{
   padding: 15px;
   color: black;
 
@@ -418,7 +420,6 @@ ul.myUL {
   text-align: center;
   margin: 5% 5% 0% 5%;
   color: black;
-
  }
 
 /********************************************************************
@@ -426,7 +427,7 @@ ul.myUL {
 ********************************************************************/
 
 /* For the text under the pictures  */
-.SinglePageText 
+.singlePageText 
 {
   position: relative;
   font-weight: bolder;
@@ -441,16 +442,26 @@ ul.myUL {
 }
 
 /* Start of the Slideshow */
-* {
+* 
+{
   box-sizing: border-box
 }
 
+/* Slideshow container */
+.slideshowContainer 
+{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
 /* Hide the images by default */
-.mySlides {
+.mySlides 
+{
   display: none;
 }
 
-/* Picture size on the slideshow */
+/* Picture size and placement on the slideshow */
 .slideshowImg
 {
   width: 100%; 
@@ -466,22 +477,16 @@ ul.myUL {
   margin-top: .5%;
 }
 
-/* Slideshow container */
-.slideshowContainer {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
 /* Next and previous buttons */
-.prev, .next {
+.prev, .next
+{
   cursor: pointer;
   position: absolute;
   top: 40%;
   padding: 0px px 0px 20px;
   margin-top: -9%;
-  margin-left: -5%;
-  width: 3%;
+  margin-left: 2%;
+  width: 4%;
   color: white;
   font-weight: bolder;
   font-size: 30px;
@@ -490,49 +495,56 @@ ul.myUL {
 }
 
 /* Moves the next button to the right side of the picture */
-.next {
+.next 
+{
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* Number text on the top left example 1/5 */
-.numbertext {
+.numbertext 
+{
   color: white;
   font-size: 25px;
-  padding: 20px 25px;
+  padding: 1% 1%;
   position: absolute;
   font-weight: bold;
 }
 
 /* Start of fading animation */
-.fade-in {
+.fade-in 
+{
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {
+@-webkit-keyframes fade 
+{
+  from 
+  {
     opacity: .7
   }
-  to {
+  to 
+  {
     opacity: 1
   }
 }
 
-@keyframes fade {
-  from {
+@keyframes fade 
+{
+  from 
+  {
     opacity: .7
   }
-  to {
+  to 
+  {
     opacity: 1
   }
-  /* End of fading animation */
-
 }
+/* End of fading animation */
+
 /* End of the Slideshow */
-
 
 
 /********************************************************************
@@ -541,14 +553,25 @@ ul.myUL {
 
 @media screen and (max-width: 1460px) 
 {
-  .photo_space {
+  .photo_space
+  {
     height: 0px;
   }
 
-  .subtitle {
+  .subtitle 
+  {
     font-size: large;
     color: white;
   }
+
+  /* Picture above the menu bar make it smaller */
+  .logoPic 
+  {
+    margin-top: 1%;
+    width: 60%;
+    height: auto;
+  }
+  
 
   /********************************************************************
     Gallery page
@@ -560,7 +583,74 @@ ul.myUL {
     width: 63%;
     margin-left: 20%;
   }
-}
+
+  /********************************************************************
+   Slideshow page or single page
+  ********************************************************************/
+  
+  /* Number text on the top left example 1/5 */
+  .numbertext 
+  {
+    padding: 1% 3%;
+  }
+
+} /* End of  Media queries for smaller screens  */
+
+
+/********************************************************************
+   Media queries for bigger tablet devices
+********************************************************************/
+
+@media screen and (max-width: 1050px) 
+{
+  .photo_space 
+  {
+    height: 0px;
+  }
+
+  .subtitle 
+  {
+    font-size: large;
+    color: white;
+  }
+  
+  /* Start of the buttons */
+  button
+  {
+    margin-left: 2.5%;
+  }
+  
+  /********************************************************************
+   Slideshow page or single page
+  ********************************************************************/
+  
+  /* Picture size and placement on the slideshow */
+  .slideshowImg
+  {
+    width: 97%; 
+    margin-left: 2%;
+  }
+
+  /* video size and placement on the slideshow */
+  .slideshowVideo
+  {
+    width: 97%; 
+    margin-left: 2%;
+  }
+
+  /* Next and previous buttons */
+  .prev, .next 
+  {
+    margin-left: 4%;
+  }
+
+  /* For the text under the pictures  */
+  .singlePageText 
+  {
+    margin-left: 2.5%;
+  }
+
+ } /* End of  Media queries for bigger tablet devices  */
 
 
 /********************************************************************
@@ -569,11 +659,13 @@ ul.myUL {
 
 @media screen and (max-width: 930px) 
 {
-  .photo_space {
+  .photo_space 
+  {
     height: 0px;
   }
 
-  .subtitle {
+  .subtitle 
+  {
     font-size: large;
     color: white;
   }
@@ -581,13 +673,27 @@ ul.myUL {
   /* Picture above the menu bar make it smaller */
   .logoPic 
   {
-    width: 350px;
-    height: 250px;
+    width: 80%;
+    height: auto;
+    margin-top: 2%;
   }
 
+  /* Start of the buttons */
+  button
+  {
+    margin-left: 2%;
+  }
+  
   /********************************************************************
     Home page
   ********************************************************************/
+
+  /* White box under menu */
+  .homeWhiteBox
+  {
+    padding-right: 5%;
+  }
+
   /* Picture in white box under menu */
   .homeWhiteBoxImage
   {
@@ -616,17 +722,19 @@ ul.myUL {
   }
 
   /* Next and previous buttons */
-  .prev, .next {
+  .prev, .next 
+  {
     margin-top: -15%;
-    margin-left: -4%;
-    width: 6%;
+    margin-left: 3.5%;
+    width: 5%;
   }
 
-  .SinglePageText 
+  .singlePageText 
   {
-    padding: 0% 3% 0% 2.5%;
+    padding-right: 3%;
   }
-}
+
+} /* End of  Media queries for tablets devices  */
 
 
 /********************************************************************
@@ -635,16 +743,18 @@ ul.myUL {
 
 @media screen and (max-width: 630px) 
 {
-  .photo_space {
+  .photo_space 
+  {
     height: 0px;
   }
 
-  .subtitle {
+  .subtitle 
+  {
     font-family: "Lato";
     font-size: large;
     color: white;
   }
-  
+
   /********************************************************************
     Home page
   ********************************************************************/
@@ -688,7 +798,7 @@ ul.myUL {
    Slideshow page or single page
   ********************************************************************/
 
-  .SinglePageText 
+  .singlePageText 
   {
     padding: 0px 3px 0px 10px;
   }
@@ -696,23 +806,25 @@ ul.myUL {
   /* Next and previous buttons */
   .prev, .next 
   {
-    margin-left: -7%;
-    width: 6%;
+    margin-left: 4%;
+    width: 8%;
   }
 }
 
 
 /********************************************************************
-   Media queries for mobile devices
+   Media queries for smaller mobile devices
 ********************************************************************/
 
 @media screen and (max-width: 570px) 
 {
-  .photo_space {
+  .photo_space 
+  {
     height: 0px;
   }
 
-  .subtitle {
+  .subtitle 
+  {
     font-family: "Lato";
     font-size: large;
     color: white;
@@ -733,17 +845,16 @@ ul.myUL {
   ********************************************************************/
 
   /* For the text under the pictures  */
-  .SinglePageText 
+  .singlePageText 
   {
-    padding: 0px 3px 0px 13px;
+    padding: 0% 3% 0% .5%;
   }
 
 
   /* Next and previous buttons */
-  .prev, .next {
-  
-    margin-top: -22%;
-    margin-left: -10%;
-    width: 7%;
+  .prev, .next 
+  {
+    margin-top: -25%;
   }
-}
+
+} /* End of  Media queries for mobile devices  */
