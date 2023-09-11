@@ -755,6 +755,28 @@ ul.myUL {
     color: white;
   }
 
+    /* Start of footer */
+  .footer 
+  {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background-color: black;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .footer img
+  {
+    width: 50px; 
+    height:40px;
+    border-radius: 30%;
+    margin: 30px 15px;
+  }
+  /* End of footer */
+
   /********************************************************************
     Home page
   ********************************************************************/
@@ -832,6 +854,24 @@ ul.myUL {
   }
 
   /********************************************************************
+   Service page
+  ********************************************************************/
+
+  /* Makes the white box in the services page */
+
+  /* Picture in first white box */
+  .serviceImageFirstBox
+  {
+    margin-right: 6%;
+  }
+
+  /* Picture in second white box */
+  .serviceImageSecondBox
+  {
+    margin-left: 7%;
+  }
+
+  /********************************************************************
     About page
   ********************************************************************/
   /* Img in the box on the about page */
@@ -886,7 +926,7 @@ ul.myUL {
   .aboutImgBox 
   {
     width: 99%;
-    margin-left: 6%;
+    margin-left: 8%;
   }
 
 } /* End of  Media queries for even smaller mobile devices  */
