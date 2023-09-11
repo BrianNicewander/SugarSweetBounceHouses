@@ -865,7 +865,7 @@ ul.myUL {
    Media queries for even smaller mobile devices
 ********************************************************************/
 
-@media screen and (max-width: 400px) 
+@media screen and (max-width: 500px) 
 {
   .photo_space 
   {
@@ -877,6 +877,10 @@ ul.myUL {
     font-family: "Lato";
     font-size: large;
     color: white;
+  }
+
+  body{
+    background-color: black;
   }
 
   /********************************************************************
