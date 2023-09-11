@@ -77,31 +77,10 @@ button:hover
   width: 50px; 
   height:40px;
   border-radius: 30%;
+  margin: 1.5%;
 }
 /* End of footer */
 
-
-
-
-
-/* Counter on the email sent page after you send a message */
-.counter
-{
-  border: none;
-  background-color: #e6f0ff;
-  font-weight: bold;
-  font-size: 15px;
-  width: 25px;
-  margin-right: 10px;
- }
-
- .emailSentPage
- {
-  text-align: center;
-  margin: 5% 5% 0% 5%;
-  color: black;
-
- }
 
 /********************************************************************
    Home page
@@ -162,13 +141,13 @@ h1
 }
 
  /* For the text under the pictures */
- p
+ .displayText
  {
-   padding-left: 15px;
+   text-align: center;
  }
 
 /* Images on the home page and book online */
-img
+.displayImg
 {
   width:300px;
   height:300px;
@@ -207,6 +186,12 @@ img
 {
   border-top: solid 15px black;
   padding-bottom: 10px;
+}
+
+/* Button that says learn more */
+.learnMoreButton
+{
+  margin-left: 30%;
 }
 
 /********************************************************************
@@ -326,6 +311,14 @@ img
    Event policies page
 ********************************************************************/
 
+ /* For the text */
+ .eventPoliciesText
+ {
+    color:black;
+   text-align: center;
+   padding: 0 2%;
+ }
+
 /* div.container and ul.myUL centers the li list */
 div.container {
   text-align: center;
@@ -335,14 +328,6 @@ ul.myUL {
   display: inline-block;
   text-align: left;
 }
-
- /* For the text */
- .eventPoliciesText
- {
-    color:black;
-   text-align: center;
-   padding-right: 13px;
- }
  
 /********************************************************************
    Gallery page
@@ -367,6 +352,7 @@ ul.myUL {
   width:90%;
   height:400px;
   border: 5px solid black;
+  margin-left: 2%;
 }
 
 /* text in the top white see through  */
@@ -386,20 +372,21 @@ ul.myUL {
 }
 
 /* Border around the picture and text */
-div.gallery {
+.gallery {
   background-color: white;
   width: 425px;
   margin: 5% 0% 0% 4%;
 }
 
 /* Image in the border */
-div.gallery img {
+.galleryImg {
   width: 92%;
   height: auto;
+  margin: 4% 0% 2% 3.5%;
 }
 
 /* Text in the border under the picture */
-div.desc {
+.galleryText {
   padding: 15px;
   color: black;
 
@@ -410,6 +397,29 @@ div.desc {
 {
   border-top: 5px solid black;
 }
+
+/********************************************************************
+   Email sent page
+********************************************************************/
+
+/* Counter on the email sent page after you send a message */
+.counter
+{
+  border: none;
+  background-color: #e6f0ff;
+  font-weight: bold;
+  font-size: 15px;
+  width: 25px;
+  margin-right: 10px;
+ }
+
+ .emailSentPage
+ {
+  text-align: center;
+  margin: 5% 5% 0% 5%;
+  color: black;
+
+ }
 
 /********************************************************************
    Slideshow page or single page
@@ -447,6 +457,15 @@ div.desc {
   height:650px;
 }
 
+/* video size and placement on the slideshow */
+.slideshowVideo
+{
+  width: 100%; 
+  height:650px;
+  margin-left: .5%;
+  margin-top: .5%;
+}
+
 /* Slideshow container */
 .slideshowContainer {
   max-width: 1000px;
@@ -459,9 +478,10 @@ div.desc {
   cursor: pointer;
   position: absolute;
   top: 40%;
-  width: auto;
-  padding: 0px 20px 0px 26px;
-  margin-top: -22px;
+  padding: 0px px 0px 20px;
+  margin-top: -9%;
+  margin-left: -5%;
+  width: 3%;
   color: white;
   font-weight: bolder;
   font-size: 30px;
@@ -574,6 +594,38 @@ div.desc {
     width: 95%;
     height: auto;
   }
+
+  /********************************************************************
+   Slideshow page or single page
+  ********************************************************************/
+
+  /* For the text under the pictures  */
+
+  /* Picture size and placement on the slideshow */
+  .slideshowImg
+  {
+    width: 96%;
+    margin-left: 2%; 
+  }
+
+   /* video size and placement on the slideshow */
+  .slideshowVideo
+  {
+    width: 96%; 
+    margin-left: 2%;
+  }
+
+  /* Next and previous buttons */
+  .prev, .next {
+    margin-top: -15%;
+    margin-left: -4%;
+    width: 6%;
+  }
+
+  .SinglePageText 
+  {
+    padding: 0% 3% 0% 2.5%;
+  }
 }
 
 
@@ -596,11 +648,23 @@ div.desc {
   /********************************************************************
     Home page
   ********************************************************************/
-    /* Picture in white box under menu */
-    .homeWhiteBoxImage
-    {
-      margin-left: 3%;
-    }
+  
+  /* Picture in white box under menu */
+  .homeWhiteBoxImage
+  {
+    margin-left: 3%;
+  }
+
+  /********************************************************************
+    About page
+  ********************************************************************/
+  /* Img in the box on the about page */
+  .aboutImgBox 
+  {
+    width: 400px;
+    height: auto;
+    margin-left: 75px;
+  }
 
   /********************************************************************
     Gallery page
@@ -621,30 +685,19 @@ div.desc {
   }
 
   /********************************************************************
-    About page
-  ********************************************************************/
-  /* Img in the box on the about page */
-  .aboutImgBox 
-  {
-    width: 400px;
-    height: auto;
-    margin-left: 75px;
-  }
-
-  /********************************************************************
    Slideshow page or single page
   ********************************************************************/
 
   .SinglePageText 
   {
-    padding-right: 20px;
+    padding: 0px 3px 0px 10px;
   }
 
-  /* Picture size on the slideshow */
-  .slideshowImg
+  /* Next and previous buttons */
+  .prev, .next 
   {
-    width: 93%; 
-    height:650px;
+    margin-left: -7%;
+    width: 6%;
   }
 }
 
@@ -672,6 +725,25 @@ div.desc {
   .aboutImgBox 
   {
     width: 410px;
-    margin-left: .5%;
+    margin-left: 3%;
+  }
+
+  /********************************************************************
+    Slideshow page or single page
+  ********************************************************************/
+
+  /* For the text under the pictures  */
+  .SinglePageText 
+  {
+    padding: 0px 3px 0px 13px;
+  }
+
+
+  /* Next and previous buttons */
+  .prev, .next {
+  
+    margin-top: -22%;
+    margin-left: -10%;
+    width: 7%;
   }
 }
