@@ -969,10 +969,8 @@ ul.myUL {
   /* For the heading in the white box*/
   .serviceHeaderText
   {
-    padding-top: 70px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 35px;
+    padding-top: 80px;
+
   }
 
 } /* End of  Media queries for even smaller mobile devices  */
