@@ -248,12 +248,18 @@ h1
 }
 
  /* For the heading in the white box*/
-.serviceText
+.serviceHeaderText
 {
   padding-top: 50px;
   text-align: center;
   font-weight: bolder;
   font-size: 35px;
+}
+
+/* For text under the heading */
+.serviceText
+{
+  margin: 0% 3%;
 }
 
 /* For button on service page */
@@ -323,7 +329,7 @@ h1
  {
   color:black;
    text-align: center;
-   padding: 0 2%;
+   padding: 0 3%;
  }
 
 /* div.container and ul.myUL centers the li list */
@@ -553,7 +559,7 @@ ul.myUL {
 
 
 /********************************************************************
-   Media queries for smaller screen 
+   Media queries for smaller computer screen 
 ********************************************************************/
 
 @media screen and (max-width: 1460px) 
@@ -776,9 +782,9 @@ ul.myUL {
     /* Picture above the menu bar make it smaller */
     .logoPic 
     {
-      width: 90%;
+      width: 96%;
       height: auto;
-      margin-top: 2%;
+      margin-top: 7%;
     }
 
   .footer img
@@ -806,9 +812,9 @@ ul.myUL {
   /* Img in the box on the about page */
   .aboutImgBox 
   {
-    width: 400px;
+    width: 90%;
     height: auto;
-    margin-left: 75px;
+    margin-left: 3%;
   }
 
   /********************************************************************
@@ -866,6 +872,7 @@ ul.myUL {
     color: white;
   }
 
+
   /********************************************************************
    Service page
   ********************************************************************/
@@ -875,7 +882,7 @@ ul.myUL {
   /* Picture in first white box */
   .serviceImageFirstBox
   {
-    margin-left: 8.5%;
+    margin-left: 4%;
   }
 
   /* Picture in second white box */
@@ -891,7 +898,6 @@ ul.myUL {
   .aboutImgBox 
   {
     width: 410px;
-    margin-left: 3%;
   }
 
   /********************************************************************
@@ -918,7 +924,7 @@ ul.myUL {
    Media queries for even smaller mobile devices
 ********************************************************************/
 
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 480px) 
 {
   .photo_space 
   {
@@ -949,7 +955,7 @@ ul.myUL {
   .aboutImgBox 
   {
     width: 99%;
-    margin-left: 8%;
+    margin-left: 9%;
   }
 
 } /* End of  Media queries for even smaller mobile devices  */
