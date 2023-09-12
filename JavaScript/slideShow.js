@@ -1,7 +1,7 @@
 // slide show javascript
 
 // This is the spot the slide show starts on and is on
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next and previous controls
@@ -19,8 +19,9 @@ function currentSlide(n)
 // This finds out how many slides there are and moves the slideIndex when you click next
 function showSlides(n) 
 {
-  var i;
-  var slides = document.getElementsByClassName("slideshow");
+  let i;
+  let slides = document.getElementsByClassName("slideshow");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) 
 	{
     slideIndex = 1
@@ -37,5 +38,10 @@ function showSlides(n)
     slides[i].style.display = "none";
   }
 
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
   slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }

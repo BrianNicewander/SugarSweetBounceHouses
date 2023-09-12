@@ -192,6 +192,15 @@ h1
   margin-left: 30%;
 }
 
+/* When there are two bounce houses that are the same */
+.sameProduct
+{
+  color:red;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 19px;
+}
+
 /********************************************************************
    Service page
 ********************************************************************/
@@ -401,28 +410,6 @@ ul.myUL {
 }
 
 /********************************************************************
-   Email sent page
-********************************************************************/
-
-/* Counter on the email sent page after you send a message */
-.counter
-{
-  border: none;
-  background-color: #e6f0ff;
-  font-weight: bold;
-  font-size: 15px;
-  width: 25px;
-  margin-right: 10px;
- }
-
- .emailSentPage
- {
-  text-align: center;
-  margin: 5% 5% 0% 5%;
-  color: black;
- }
-
-/********************************************************************
    Slideshow page or single page
 ********************************************************************/
 
@@ -456,7 +443,7 @@ ul.myUL {
 }
 
 /* Hide the images by default */
-.mySlides 
+.slideshow 
 {
   display: none;
 }
@@ -508,6 +495,24 @@ ul.myUL {
   padding: 1% 1%;
   position: absolute;
   font-weight: bold;
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: yellow;
 }
 
 /* Start of fading animation */
@@ -768,6 +773,14 @@ ul.myUL {
     font-weight: bolder;
   }
 
+    /* Picture above the menu bar make it smaller */
+    .logoPic 
+    {
+      width: 90%;
+      height: auto;
+      margin-top: 2%;
+    }
+
   .footer img
   {
     width: 50px; 
@@ -917,6 +930,16 @@ ul.myUL {
     font-family: "Lato";
     font-size: large;
     color: white;
+  }
+
+  /********************************************************************
+   Home page
+  ********************************************************************/
+
+  /* White box under menu */
+  .homeWhiteBox
+  {
+    margin-left: 2%;
   }
 
   /********************************************************************
