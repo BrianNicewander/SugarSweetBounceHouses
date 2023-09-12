@@ -122,6 +122,7 @@ button:hover
   border: 5px solid black;
 }
 
+
 /********************************************************************
    Home page and Book Online pages
 ********************************************************************/
@@ -806,6 +807,13 @@ ul.myUL {
     margin-left: 3%;
   }
 
+  /* All the text in the white box */
+  .allText
+  {
+    margin: 0% 4%;
+  }
+
+
   /********************************************************************
     About page
   ********************************************************************/
@@ -956,6 +964,15 @@ ul.myUL {
   {
     width: 99%;
     margin-left: 9%;
+  }
+
+  /* For the heading in the white box*/
+  .serviceHeaderText
+  {
+    padding-top: 70px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
   }
 
 } /* End of  Media queries for even smaller mobile devices  */
