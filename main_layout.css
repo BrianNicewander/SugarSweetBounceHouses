@@ -875,13 +875,13 @@ ul.myUL {
   /* Picture in first white box */
   .serviceImageFirstBox
   {
-    margin-right: 12%;
+    margin-left: 12%;
   }
 
   /* Picture in second white box */
   .serviceImageSecondBox
   {
-    margin-left: 10%;
+    margin-left: 8%;
   }
 
   /********************************************************************
